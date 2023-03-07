@@ -2,19 +2,22 @@
 
   <h3 class="sticky-top text-center bg-primary text-white py-1">{{title}}</h3>
   <section class="row ">
-    <section class="card my-4  py-2 lg-col-3 col-md-4 col-sm-12  "  *ngFor="let item of lp; let i =index" >
+    <section class="card my-4 mx-auto bg-warning py-2 lg-col-3 col-md-5 col-sm-12  textz-white"  *ngFor="let item of lp; let i =index" >
       <img class="card-img-top mx" [src]="item.okladka" [alt]="item.nazwa">
       <section class="card-body">
-        <h2 class="card-title text-center " >
+        <h2 class="card-title text-center mx-auto my-auto" >
           {{item.wykonawcy}} : {{item.nazwa}} 
         </h2>
-        <button type="button" class="btn btn-primary center mx-6" (click)="show(i)" >
+        <button type="button" class="btn btn-primary center d-block mt-3 mx-auto" (click)="show(i)" >
           Opis plyty <br>
         </button>
-        <section *ngIf="item.wiecejinfo" class="text-succes text-center text-bol fs-3">
+
+
+        <section *ngIf="item.wiecejinfo" class="text-succes text-center text-bol fs-3 mt-3">
           {{item.opis}}
         </section>
       </section>
+
   </section>
-  <section class="sticky-bottom text-center bg-primary text-white py-1">super stronka</section>
+  <section class="sticky-bottom text-center bg-primary text-white py-1">super stronka 2023</section>
 </section>

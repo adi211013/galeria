@@ -5,4 +5,5 @@ export interface Plyta
     okladka:string;
     opis:string;
     wiecejinfo:boolean;
+    //tracklista:string[];
 }

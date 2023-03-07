@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Plyta } from './plyta';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,6 +21,7 @@ export class AppComponent {
     {nazwa:"Redrum", wykonawcy:"Słoń",okladka:"../assets/9.jpg",opis:"Brain Dead Familia prezentuje najnowszy album solowy Słonia pod tytułem „Redrum”!Czwarty album solowy oraz następca wydanego w 2018 roku „Mutylatora” ukaże się 11 grudnia 2020 roku.Najnowszy materiał poznańskiego rapera, który powstawał pod roboczym tytułem „Czerwony Rum” został zrealizowany we współpracy z jednym producentem. Za wszystkie bity odpowiada Chris Carson, a zgodnie z wcześniejszymi zapowiedziami – na płycie nie pojawiają się żadni dodatkowi goście (wyjątkiem są scratche DJ Flipa w dwóch numerach). W powstanie albumu zaangażowani byli Brainfreezer (udźwiękowienie, skity, realizacja wokali) oraz Kamil “Rasta” Baszak ze studia RAStool (realizacja wokali). Masteringiem zajął się Bartosz Napieralski (StudioC2/San Antonio Records) z którym Słoń wielokrotnie współpracował w przeszłości.Za projekt graficzny zdobiący front albumu odpowiedzialni są: grafik ukrywający się pod pseudonimem Slash97 oraz fotograf Adam Wilkoszarski. Grill wykonała Pracownia Złotnicza Andrzeja Wojciechowskiego przy współpracy z Michałem Kornoszem oraz wcześniej wspomnianym grafikiem.",wiecejinfo:false},
     {nazwa:"Mutylator", wykonawcy:"Słoń",okladka:"../assets/10.jpg",opis:"Rok po wydaniu ostatniej części trylogii “Czarne Słońce” WSRH, Słoń powraca z nowym albumem solowym!Na albumie „Mutylator” znajdzie się siedemnaście premierowych tracków, w których gościnnie usłyszycie takich artystów jak Opał, Szpaku, zespół Polska Wersja. Z kolei z zagranicznych gości pojawili się King Gordy, G-Mo Skee czy Řeznik. Za bity odpowiadają między innymi Gibbs, Young Veterans czy The Returners.",wiecejinfo:false},
   ]
+
   show(i:number):void
   {
     this.lp[i].wiecejinfo=!this.lp[i].wiecejinfo;
